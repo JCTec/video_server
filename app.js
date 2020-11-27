@@ -5,7 +5,7 @@ const app = express()
 
 app.get('/media/videos/:video', function(req, res) {
   var video = req.params.video
-  const path = '/home/ubuntu/BiuAPI/media/videos/' + video
+  const path = '/Users/jc/Desktop/BiuAPI/media/videos/' + video
   const stat = fs.statSync(path)
   const fileSize = stat.size
   const range = req.headers.range
